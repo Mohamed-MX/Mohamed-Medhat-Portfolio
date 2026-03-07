@@ -18,27 +18,6 @@
         content="Flutter & Mobile Application Developer based in Cairo, Egypt. Building modern mobile apps with Flutter, Dart, Kotlin, and Java.">
     <meta property="og:image" content="img/Mohamed%20Medhat%20hero.png">
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Mohamed Medhat Basyony",
-            "jobTitle": "Flutter & Android Mobile App Developer",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Cairo",
-                "addressCountry": "EG"
-            },
-            "email": "mailto:heiarayashiki@gmail.com",
-            "url": "https://github.com/Mohamed-MX/Mohamed-Medhat-Portfolio",
-            "sameAs": [
-                "https://github.com/Mohamed-MX",
-                "https://www.linkedin.com/in/mohamedmbasyony/"
-            ]
-        }
-    </script>
-
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -62,7 +41,7 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Mohamed<span class="brand-dot">.</span></a>
+            <a href="index.html" class="navbar-brand">Mohamed</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,9 +49,10 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
                     <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#work" class="nav-item nav-link">Work</a>
-                    <a href="#skills" class="nav-item nav-link">Skills</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#service" class="nav-item nav-link">Services</a>
                     <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="nav-actions d-flex align-items-center">
@@ -96,34 +76,20 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <p class="eyebrow">Flutter & Android Developer</p>
+                            <p>Hi, I'm</p>
                             <h1>Mohamed Medhat Basyony</h1>
                             <h2></h2>
                             <div class="typed-text">Flutter Developer, Mobile Application Developer, Android Developer
                             </div>
                             <p class="hero-subtitle">
-                                I build fast, reliable mobile apps with <strong>Flutter</strong> and
-                                <strong>Android (Kotlin)</strong>—with clean architecture, great UX, and production-ready
-                                code.
+                                Based in Cairo, Egypt. I build performant, user-friendly mobile apps with Flutter, Dart,
+                                Kotlin & Java.
                             </p>
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="#work">View Featured Work</a>
-                            <a class="btn btn-outline" href="#contact">Contact</a>
-                        </div>
-                        <div class="hero-proof">
-                            <div class="proof-item">
-                                <p class="proof-kpi">Flutter</p>
-                                <p class="proof-desc">Cross‑platform apps</p>
-                            </div>
-                            <div class="proof-item">
-                                <p class="proof-kpi">Android</p>
-                                <p class="proof-desc">Kotlin & Java</p>
-                            </div>
-                            <div class="proof-item">
-                                <p class="proof-kpi">UI/UX</p>
-                                <p class="proof-desc">Figma → pixel‑perfect</p>
-                            </div>
+                            <a class="btn" href="#portfolio">View Projects</a>
+                            <a class="btn btn-outline" href="Mohamed%20Medhat%20Farag%202026.pdf" target="_blank"
+                                rel="noopener noreferrer">Download CV</a>
                         </div>
                         <div class="hero-social" aria-label="Social links">
                             <a href="https://github.com/Mohamed-MX" target="_blank" rel="noopener noreferrer"
@@ -151,249 +117,154 @@
     </div>
     <!-- Hero End -->
 
-    <!-- Work Start -->
-    <section class="section work" id="work">
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/about.jpg" alt="Mohamed Medhat Basyony" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <p>Learn About Me</p>
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                I'm Mohamed Medhat Basyony, a passionate Mobile App Developer and Flutter Developer
+                                based in Cairo, Egypt. Currently pursuing a Bachelor's degree in Computer Science with a
+                                major in Mobile Applications and Cloud Computing at the Canadian International College
+                                (CIC), expected to graduate in 2026. I have hands-on experience in Flutter, Dart,
+                                Kotlin, Java, and cross-platform mobile development, along with web technologies like
+                                HTML, CSS, PHP, and Laravel. I'm enthusiastic about building innovative mobile solutions
+                                and continuously expanding my skill set.
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-name">
+                                <p>Flutter & Dart</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Mobile App Development</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Android (Kotlin & Java)</p>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Web Development</p>
+                                <p>80%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a class="btn" href="#contact">Let’s work together</a>
+                            <a class="btn btn-outline" href="#portfolio">See my work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="service" id="service">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Featured Work</p>
-                <h2>Projects I’m Proud Of</h2>
+                <p>What I do</p>
+                <h2>My Services</h2>
             </div>
-
             <div class="row">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                    <article class="work-card">
-                        <div class="work-media">
-                            <img src="img/portfolio-1.jpg" alt="Eshtry Menny e-commerce app screenshots"
-                                loading="lazy" decoding="async">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-pencil-ruler"></i>
                         </div>
-                        <div class="work-body">
-                            <div class="work-top">
-                                <h3>Eshtry Menny — E‑Commerce</h3>
-                                <div class="work-tags">
-                                    <span class="tag">Flutter</span>
-                                    <span class="tag">UI/UX</span>
-                                    <span class="tag">State</span>
-                                </div>
-                            </div>
-                            <p class="work-desc">
-                                A modern shopping experience with clean navigation, product discovery, and a scalable UI
-                                built for growth.
-                            </p>
-                            <div class="work-actions">
-                                <a class="btn btn-small"
-                                    href="https://github.com/Mohamed-MX/E-commerce-flutter-application-Eshtry-menny-Podcast-merch"
-                                    target="_blank" rel="noopener noreferrer" aria-label="Eshtry Menny source on GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-outline btn-small" href="#contact">Request demo</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <article class="work-card">
-                        <div class="work-media">
-                            <img src="img/portfolio-2.jpg" alt="Food App project preview" loading="lazy"
-                                decoding="async">
-                        </div>
-                        <div class="work-body">
-                            <div class="work-top">
-                                <h3>Food App — Flutter</h3>
-                                <div class="work-tags">
-                                    <span class="tag">Flutter</span>
-                                    <span class="tag">Animations</span>
-                                    <span class="tag">Responsive</span>
-                                </div>
-                            </div>
-                            <p class="work-desc">
-                                A responsive UI with delightful motion and a structured codebase that stays easy to
-                                extend.
-                            </p>
-                            <div class="work-actions">
-                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/Food_App" target="_blank"
-                                    rel="noopener noreferrer" aria-label="Food App source on GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-outline btn-small" href="#contact">Request demo</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <article class="work-card">
-                        <div class="work-media">
-                            <img src="img/portfolio-3.jpg" alt="E-reader online book store preview" loading="lazy"
-                                decoding="async">
-                        </div>
-                        <div class="work-body">
-                            <div class="work-top">
-                                <h3>E‑Reader Book Store — Kotlin</h3>
-                                <div class="work-tags">
-                                    <span class="tag">Android</span>
-                                    <span class="tag">Kotlin</span>
-                                    <span class="tag">UX</span>
-                                </div>
-                            </div>
-                            <p class="work-desc">
-                                Android app focused on readability and a clean shopping flow—built with Kotlin and
-                                solid UI patterns.
-                            </p>
-                            <div class="work-actions">
-                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/E-reader-Online-Book-Store-"
-                                    target="_blank" rel="noopener noreferrer"
-                                    aria-label="E-Reader Book Store source on GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-outline btn-small" href="#contact">Request demo</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <article class="work-card">
-                        <div class="work-media">
-                            <img src="img/portfolio-4.jpg" alt="CRMS clinic management system preview" loading="lazy"
-                                decoding="async">
-                        </div>
-                        <div class="work-body">
-                            <div class="work-top">
-                                <h3>CRMS — Clinic Management</h3>
-                                <div class="work-tags">
-                                    <span class="tag">Web</span>
-                                    <span class="tag">CRUD</span>
-                                    <span class="tag">DB</span>
-                                </div>
-                            </div>
-                            <p class="work-desc">
-                                A clinic management system focused on clarity and productivity, with a clean data model
-                                and admin workflow.
-                            </p>
-                            <div class="work-actions">
-                                <a class="btn btn-small"
-                                    href="https://github.com/Mohamed-MX/CRMS-Clinic-Reservation-Manegment-System"
-                                    target="_blank" rel="noopener noreferrer" aria-label="CRMS source on GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-outline btn-small" href="#contact">Request demo</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Work End -->
-
-    <!-- Skills Start -->
-    <section class="section skills2" id="skills">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Toolkit</p>
-                <h2>Skills & Stack</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="profile-card">
-                        <div class="profile-media">
-                            <img src="img/about.jpg" alt="Mohamed Medhat Basyony" loading="lazy" decoding="async">
-                        </div>
-                        <div class="profile-body">
-                            <h3>About</h3>
+                        <div class="service-text">
+                            <h3>App Design</h3>
                             <p>
-                                Mobile developer based in Cairo. I enjoy shipping polished apps with strong architecture,
-                                clear code, and thoughtful UX. Currently studying Computer Science (CIC), graduating 2026.
+                                Crafting intuitive and visually appealing mobile app interfaces using Figma and modern
+                                UI/UX design principles for seamless user experiences.
                             </p>
-                            <div class="profile-actions">
-                                <a class="btn" href="Mohamed%20Medhat%20Farag%202026.pdf" target="_blank"
-                                    rel="noopener noreferrer">Download CV</a>
-                                <a class="btn btn-outline" href="#contact">Let’s talk</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="stack-grid">
-                        <div class="stack-card">
-                            <h4>Mobile</h4>
-                            <div class="chip-row">
-                                <span class="chip">Flutter</span>
-                                <span class="chip">Dart</span>
-                                <span class="chip">Android</span>
-                                <span class="chip">Kotlin</span>
-                                <span class="chip">Java</span>
-                            </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-android"></i>
                         </div>
-                        <div class="stack-card">
-                            <h4>Architecture</h4>
-                            <div class="chip-row">
-                                <span class="chip">Clean Architecture</span>
-                                <span class="chip">MVVM</span>
-                                <span class="chip">SOLID</span>
-                                <span class="chip">Reusable UI</span>
-                            </div>
-                        </div>
-                        <div class="stack-card">
-                            <h4>Tools</h4>
-                            <div class="chip-row">
-                                <span class="chip">Git / GitHub</span>
-                                <span class="chip">Firebase</span>
-                                <span class="chip">REST APIs</span>
-                                <span class="chip">Postman</span>
-                            </div>
-                        </div>
-                        <div class="stack-card">
-                            <h4>Design</h4>
-                            <div class="chip-row">
-                                <span class="chip">Figma</span>
-                                <span class="chip">Design Systems</span>
-                                <span class="chip">Accessibility</span>
-                            </div>
+                        <div class="service-text">
+                            <h3>App Development</h3>
+                            <p>
+                                Building high-performance cross-platform mobile applications using Flutter, Dart, and
+                                Kotlin for both Android and iOS platforms.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="skills meters">
-                        <div class="skill-name">
-                            <p>Flutter & Dart</p>
-                            <p>90%</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop"></i>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                        <div class="service-text">
+                            <h3>Web Design</h3>
+                            <p>
+                                Designing responsive and modern websites with clean layouts, ensuring great aesthetics
+                                and user-friendly navigation across all devices.
+                            </p>
                         </div>
-                        <div class="skill-name">
-                            <p>Android (Kotlin)</p>
-                            <p>85%</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop-code"></i>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        <div class="skill-name">
-                            <p>UI/UX Implementation</p>
-                            <p>88%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
-                                aria-valuemax="100"></div>
+                        <div class="service-text">
+                            <h3>Web Development</h3>
+                            <p>
+                                Developing dynamic web applications using HTML, CSS, PHP, Laravel, and MySQL with robust
+                                back-end functionality.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Skills End -->
+    </div>
+    <!-- Service End -->
 
 
     <!-- Experience Start -->
-    <section class="section experience" id="experience">
+    <div class="experience" id="experience">
         <div class="container">
             <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Resume</p>
+                <p>My Resume</p>
                 <h2>Experience & Education</h2>
             </header>
             <div class="timeline">
@@ -444,11 +315,114 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Experience End -->
 
 
-    <!-- (Portfolio grid replaced by Featured Work above) -->
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Portfolio</p>
+                <h2>My Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">Flutter / Dart</li>
+                        <li data-filter=".filter-2">Android / Kotlin</li>
+                        <li data-filter=".filter-3">Web</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-1.jpg" alt="Eshtry Menny e-commerce app screenshots" loading="lazy"
+                                decoding="async">
+                        </div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-meta">
+                                <h3>Eshtry Menny — E‑Commerce</h3>
+                                <p class="project-meta">Flutter • State management • UI/UX</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small"
+                                    href="https://github.com/Mohamed-MX/E-commerce-flutter-application-Eshtry-menny-Podcast-merch"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-2.jpg" alt="Food App project preview" loading="lazy"
+                                decoding="async">
+                        </div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-meta">
+                                <h3>Food App — Flutter</h3>
+                                <p class="project-meta">Flutter • Responsive UI • Animations</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/Food_App" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-3.jpg" alt="E-reader online book store preview" loading="lazy"
+                                decoding="async">
+                        </div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-meta">
+                                <h3>E‑Reader Book Store — Kotlin</h3>
+                                <p class="project-meta">Android • Kotlin • Clean UI</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/E-reader-Online-Book-Store-"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-4.jpg" alt="CRMS clinic management system preview" loading="lazy"
+                                decoding="async">
+                        </div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-meta">
+                                <h3>CRMS — Clinic Management</h3>
+                                <p class="project-meta">Web • CRUD • Database</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small"
+                                    href="https://github.com/Mohamed-MX/CRMS-Clinic-Reservation-Manegment-System"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
 
 
     <!-- Contact Start -->
