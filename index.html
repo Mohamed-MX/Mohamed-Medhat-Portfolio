@@ -9,6 +9,14 @@
     <meta
         content="Mohamed Medhat Basyony - Flutter & Mobile Application Developer based in Cairo, Egypt. Specializing in App Design, App Development, Web Design, and Web Development."
         name="description">
+    <meta name="theme-color" content="#A40E0D">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohamed Medhat | Flutter & Mobile Developer">
+    <meta property="og:description"
+        content="Flutter & Mobile Application Developer based in Cairo, Egypt. Building modern mobile apps with Flutter, Dart, Kotlin, and Java.">
+    <meta property="og:image" content="img/Mohamed%20Medhat%20hero.png">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -29,6 +37,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <a class="skip-link" href="#home">Skip to content</a>
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
@@ -46,6 +55,14 @@
                     <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
+                <div class="nav-actions d-flex align-items-center">
+                    <a class="btn btn-nav d-none d-lg-inline-flex" href="Mohamed%20Medhat%20Farag%202026.pdf"
+                        target="_blank" rel="noopener noreferrer">Download CV</a>
+                    <button class="btn btn-icon ml-2" id="theme-toggle" type="button" aria-label="Toggle theme"
+                        title="Toggle theme">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -59,21 +76,40 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <p>I'm</p>
+                            <p>Hi, I'm</p>
                             <h1>Mohamed Medhat Basyony</h1>
                             <h2></h2>
                             <div class="typed-text">Flutter Developer, Mobile Application Developer, Android Developer
                             </div>
+                            <p class="hero-subtitle">
+                                Based in Cairo, Egypt. I build performant, user-friendly mobile apps with Flutter, Dart,
+                                Kotlin & Java.
+                            </p>
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="#contact">Hire Me</a>
-                            <a class="btn" href="#contact">Contact Me</a>
+                            <a class="btn" href="#portfolio">View Projects</a>
+                            <a class="btn btn-outline" href="Mohamed%20Medhat%20Farag%202026.pdf" target="_blank"
+                                rel="noopener noreferrer">Download CV</a>
+                        </div>
+                        <div class="hero-social" aria-label="Social links">
+                            <a href="https://github.com/Mohamed-MX" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamedmbasyony/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:heiarayashiki@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 d-none d-md-block">
                     <div class="hero-image">
-                        <img src="img/Mohamed Medhat hero.png" alt="Mohamed Medhat Basyony">
+                        <img src="img/Mohamed Medhat hero.png" alt="Portrait of Mohamed Medhat Basyony" loading="eager"
+                            decoding="async">
                     </div>
                 </div>
             </div>
@@ -88,7 +124,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="img/about.jpg" alt="Mohamed Medhat Basyony">
+                        <img src="img/about.jpg" alt="Mohamed Medhat Basyony" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -142,7 +178,10 @@
                                     aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <a class="btn" href="#contact">Contact Me</a>
+                        <div class="about-cta">
+                            <a class="btn" href="#contact">Let’s work together</a>
+                            <a class="btn btn-outline" href="#portfolio">See my work</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,48 +340,82 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio-1.jpg" alt="Eshtry Menny Flutter App">
+                            <img src="img/portfolio-1.jpg" alt="Eshtry Menny e-commerce app screenshots" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="portfolio-text">
-                            <h3>Eshtry Menny - E-Commerce</h3>
-                            <a class="btn"
-                                href="https://github.com/Mohamed-MX/E-commerce-flutter-application-Eshtry-menny-Podcast-merch"
-                                target="_blank">+</a>
+                            <div class="portfolio-meta">
+                                <h3>Eshtry Menny — E‑Commerce</h3>
+                                <p class="project-meta">Flutter • State management • UI/UX</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small"
+                                    href="https://github.com/Mohamed-MX/E-commerce-flutter-application-Eshtry-menny-Podcast-merch"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio-2.jpg" alt="Food App Flutter">
+                            <img src="img/portfolio-2.jpg" alt="Food App project preview" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="portfolio-text">
-                            <h3>Food App - Flutter</h3>
-                            <a class="btn" href="https://github.com/Mohamed-MX/Food_App" target="_blank">+</a>
+                            <div class="portfolio-meta">
+                                <h3>Food App — Flutter</h3>
+                                <p class="project-meta">Flutter • Responsive UI • Animations</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/Food_App" target="_blank"
+                                    rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio-3.jpg" alt="E-reader Online Book Store">
+                            <img src="img/portfolio-3.jpg" alt="E-reader online book store preview" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="portfolio-text">
-                            <h3>E-Reader Book Store - Kotlin</h3>
-                            <a class="btn" href="https://github.com/Mohamed-MX/E-reader-Online-Book-Store-"
-                                target="_blank">+</a>
+                            <div class="portfolio-meta">
+                                <h3>E‑Reader Book Store — Kotlin</h3>
+                                <p class="project-meta">Android • Kotlin • Clean UI</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small" href="https://github.com/Mohamed-MX/E-reader-Online-Book-Store-"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio-4.jpg" alt="CRMS Clinic Reservation System">
+                            <img src="img/portfolio-4.jpg" alt="CRMS clinic management system preview" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="portfolio-text">
-                            <h3>CRMS - Clinic Management</h3>
-                            <a class="btn" href="https://github.com/Mohamed-MX/CRMS-Clinic-Reservation-Manegment-System"
-                                target="_blank">+</a>
+                            <div class="portfolio-meta">
+                                <h3>CRMS — Clinic Management</h3>
+                                <p class="project-meta">Web • CRUD • Database</p>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-small"
+                                    href="https://github.com/Mohamed-MX/CRMS-Clinic-Reservation-Manegment-System"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -357,28 +430,57 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                                <div class="contact-card-body">
+                                    <p class="contact-card-label">Email</p>
+                                    <a href="mailto:heiarayashiki@gmail.com">heiarayashiki@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                                <div class="contact-card-body">
+                                    <p class="contact-card-label">Phone</p>
+                                    <a href="tel:+2001120615885">+20 01120615885</a>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"
+                                        aria-hidden="true"></i></div>
+                                <div class="contact-card-body">
+                                    <p class="contact-card-label">Location</p>
+                                    <p class="contact-card-text">Nasr City, Cairo, Egypt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-8">
                         <div class="contact-form">
                             <div class="section-header text-left">
-                                <p style="color: #ffffff; background: transparent;">Get In Touch</p>
-                                <h2 style="color: #ffffff;">Contact Me</h2>
+                                <p>Get In Touch</p>
+                                <h2>Contact Me</h2>
                             </div>
-                            <form>
+                            <form id="contactForm">
                                 <div class="control-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" />
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name"
+                                        autocomplete="name" required />
                                 </div>
                                 <div class="control-group mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" />
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        autocomplete="email" required />
                                 </div>
                                 <div class="control-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Subject" />
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                        required />
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Message" rows="4"
+                                        required></textarea>
                                 </div>
                                 <div>
-                                    <button class="btn">Send Message</button>
+                                    <button class="btn" type="submit">Send Message</button>
                                 </div>
                             </form>
                         </div>
@@ -402,8 +504,10 @@
                         <p>heiarayashiki@gmail.com</p>
                     </div>
                     <div class="footer-social">
-                        <a href="https://github.com/Mohamed-MX" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mohamedmbasyony/" target="_blank"><i
+                        <a href="https://github.com/Mohamed-MX" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamedmbasyony/" target="_blank"
+                            rel="noopener noreferrer"><i
                                 class="fab fa-linkedin-in"></i></a>
                         <a href="mailto:heiarayashiki@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>

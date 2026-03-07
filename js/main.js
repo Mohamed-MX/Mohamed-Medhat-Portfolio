@@ -55,6 +55,38 @@
             }
         }
     });
+
+    // Theme toggle (persisted)
+    var applyTheme = function (theme) {
+        var isDark = theme === 'dark';
+        $('body').toggleClass('theme-dark', isDark);
+
+        var $icon = $('#theme-toggle i');
+        if ($icon.length) {
+            $icon.removeClass('fa-moon fa-sun').addClass(isDark ? 'fa-sun' : 'fa-moon');
+        }
+    };
+
+    var savedTheme = null;
+    try {
+        savedTheme = localStorage.getItem('theme');
+    } catch (e) { }
+
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        applyTheme('dark');
+    } else {
+        applyTheme('light');
+    }
+
+    $('#theme-toggle').on('click', function () {
+        var nextTheme = $('body').hasClass('theme-dark') ? 'light' : 'dark';
+        applyTheme(nextTheme);
+        try {
+            localStorage.setItem('theme', nextTheme);
+        } catch (e) { }
+    });
     
     
     // Typed Initiate
@@ -103,6 +135,29 @@
         $("#portfolio-filter li").removeClass('filter-active');
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+
+    // Contact form: open email client with prefilled message
+    $('#contactForm').on('submit', function (event) {
+        event.preventDefault();
+
+        var name = ($('input[name="name"]').val() || '').toString().trim();
+        var email = ($('input[name="email"]').val() || '').toString().trim();
+        var subject = ($('input[name="subject"]').val() || '').toString().trim();
+        var message = ($('textarea[name="message"]').val() || '').toString().trim();
+
+        var mailSubject = subject || ('Portfolio inquiry' + (name ? ' — ' + name : ''));
+        var bodyLines = [];
+        if (name) bodyLines.push('Name: ' + name);
+        if (email) bodyLines.push('Email: ' + email);
+        bodyLines.push('');
+        bodyLines.push(message);
+
+        var mailto = 'mailto:heiarayashiki@gmail.com'
+            + '?subject=' + encodeURIComponent(mailSubject)
+            + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+        window.location.href = mailto;
     });
     
 })(jQuery);
