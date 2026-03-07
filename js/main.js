@@ -125,17 +125,19 @@
     
     
     
-    // Portfolio filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
+    // Portfolio filter (optional; only if section exists)
+    if ($('.portfolio-container').length) {
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
 
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
+        $('#portfolio-filter li').on('click', function () {
+            $("#portfolio-filter li").removeClass('filter-active');
+            $(this).addClass('filter-active');
+            portfolioIsotope.isotope({filter: $(this).data('filter')});
+        });
+    }
 
     // Contact form: open email client with prefilled message
     $('#contactForm').on('submit', function (event) {
