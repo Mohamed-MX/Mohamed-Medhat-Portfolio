@@ -1480,3 +1480,169 @@ a:focus {
         padding: 0 5px;
     }
 }
+
+
+/*******************************/
+/****** Testimonials CSS *******/
+/*******************************/
+.testimonials {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 80px 0;
+    background: linear-gradient(135deg, #1a0a0a 0%, #2d0808 50%, #1a0a0a 100%);
+    overflow: hidden;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #ffffff;
+    clip-path: ellipse(55% 100% at 50% 0%);
+    z-index: 1;
+}
+
+.testimonials .section-header p {
+    color: #cccccc;
+    background: transparent;
+}
+
+.testimonials .section-header p::before {
+    background: #A40E0D;
+}
+
+.testimonials .section-header h2 {
+    color: #ffffff;
+}
+
+.testimonials .testimonials-carousel {
+    padding: 20px 10px 50px 10px;
+}
+
+.testimonials .testimonial-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(164, 14, 13, 0.4);
+    border-radius: 12px;
+    padding: 40px 35px 35px 35px;
+    margin: 10px 15px;
+    position: relative;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.testimonials .testimonial-item:hover {
+    background: rgba(164, 14, 13, 0.15);
+    border-color: #A40E0D;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(164, 14, 13, 0.25);
+}
+
+.testimonials .testimonial-quote {
+    position: absolute;
+    top: -20px;
+    left: 35px;
+    width: 44px;
+    height: 44px;
+    background: #A40E0D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(164, 14, 13, 0.5);
+}
+
+.testimonials .testimonial-quote i {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.testimonials .testimonial-text {
+    margin-bottom: 25px;
+}
+
+.testimonials .testimonial-text p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonials .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonials .testimonial-avatar {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #A40E0D, #d41514);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonials .testimonial-avatar i {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.testimonials .testimonial-info h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.testimonials .testimonial-info span {
+    color: #A40E0D;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Owl Carousel dots for testimonials */
+.testimonials .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimonials .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.testimonials .owl-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.testimonials .owl-dot.active span,
+.testimonials .owl-dot:hover span {
+    background: #A40E0D;
+    transform: scale(1.3);
+}
+
+@media (max-width: 767.98px) {
+    .testimonials {
+        padding: 50px 0 60px 0;
+    }
+
+    .testimonials .testimonial-item {
+        padding: 35px 25px 25px 25px;
+        margin: 10px 5px;
+    }
+}
